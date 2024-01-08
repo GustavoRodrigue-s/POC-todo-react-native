@@ -1,0 +1,1 @@
+export const createId = () => `${Math.round(Math.random() * 99999)}`;
