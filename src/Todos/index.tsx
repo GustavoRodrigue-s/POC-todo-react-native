@@ -16,6 +16,7 @@ export const Todos: React.FC = () => {
         data={todos}
         contentContainerStyle={{ gap: 16 }}
         keyExtractor={({ id }) => id}
+        ListEmptyComponent={<Text>A lista está vazia...</Text>}
         renderItem={({ item }) => (
           <Todo 
             text={item.text} 
